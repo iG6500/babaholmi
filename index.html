@@ -443,6 +443,9 @@ main{padding-block:30px 64px}
   .card-inner{aspect-ratio:auto;height:min(560px,calc(100svh - 120px))}
   .pic{flex:1 1 auto;min-height:0}
   .cardbody{flex:0 0 auto;padding:4px 18px 16px;gap:8px}
+  .pic,.card-face.back{cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .details-btn{font-size:.95rem;gap:7px;padding:9px 16px 9px 12px;border-radius:999px;background:#EFEADF;color:#1E4034;min-height:40px}
+  .details-btn .ico{width:18px;height:18px}
   .stat{padding:16px 12px;border-left:none}
   .stat:first-child{padding-left:12px}
   /* compact, non-sticky filters on phones */
@@ -678,7 +681,7 @@ main{padding-block:30px 64px}
         <article class="{{item.cardClass}}">
           <div class="card-inner">
             <div class="card-face front">
-              <div class="{{item.picClass}}">
+              <div class="{{item.picClass}}" sc-camel-on-click="{{item.faceTap}}">
                 <sc-if value="{{item.hasImg}}" hint-placeholder-val="{{false}}">
                   <img class="photo" src="{{item.img}}" alt="{{item.title}}" loading="lazy" decoding="async">
                 </sc-if>
@@ -715,7 +718,7 @@ main{padding-block:30px 64px}
                 </div>
               </div>
             </div>
-            <div class="card-face back">
+            <div class="card-face back" sc-camel-on-click="{{item.faceTap}}">
               <h3>{{item.title}}</h3>
               <dl class="specs">
                 <div><dt>Kategória</dt><dd>{{item.catLabel}}</dd></div>
@@ -1089,6 +1092,12 @@ class Component extends DCLogic {
         cardClass: 'card' + (isFlipped ? ' flipped' : '') + (pf.picked ? ' picked' : ''),
         ariaFlipped: isFlipped ? 'true' : 'false',
         toggleFlip: function(){ self.toggleFlip(it.id); },
+        faceTap: function(e){
+          if (!window.matchMedia || !window.matchMedia('(max-width:620px)').matches) return;
+          var t = e && e.target;
+          if (t && t.closest && t.closest('button,a,select')) return;
+          self.toggleFlip(it.id);
+        },
         heartClass: pf.heartClass,
         heartInlineClass: pf.heartInlineClass,
         ariaPicked: pf.ariaPicked,
