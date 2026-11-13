@@ -325,7 +325,8 @@ main{padding-block:30px 64px}
 .card:not(.flipped):hover .card-inner{transform:translateY(-6px)}
 .card.picked .card-face.front{border-color:#1E4034;box-shadow:0 0 0 1px #1E4034}
 
-.pic{position:relative;flex:0 0 46%;display:grid;place-items:center;margin:8px;border-radius:20px;background-color:var(--t);color:#1E4034;background-image:radial-gradient(rgba(30,64,52,.08) 2px, transparent 2.6px);background-size:18px 18px}
+.pic{position:relative;flex:0 0 54%;display:grid;place-items:center;margin:8px;border-radius:20px;background-color:var(--t);color:#1E4034;background-image:radial-gradient(rgba(30,64,52,.08) 2px, transparent 2.6px);background-size:18px 18px}
+.pic > .photo,.mini-pic > .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block}
 .pic > .ico{width:34%;height:34%;stroke-width:1.4;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
 .card:not(.flipped):hover .pic > .ico{transform:rotate(-8deg) scale(1.1)}
 .ribbon{position:absolute;top:10px;left:10px;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px}
@@ -535,7 +536,12 @@ main{padding-block:30px 64px}
         <sc-for list="{{xmasItems}}" as="x" hint-placeholder-count="5">
           <article class="mini" role="listitem">
             <div class="mini-pic">
-              <svg class="ico" aria-hidden="true"><use href="#i-gift"></use></svg>
+              <sc-if value="{{x.hasImg}}" hint-placeholder-val="{{false}}">
+                <img class="photo" src="{{x.img}}" alt="{{x.title}}" loading="lazy" decoding="async">
+              </sc-if>
+              <sc-if value="{{x.noImg}}" hint-placeholder-val="{{true}}">
+                <svg class="ico" aria-hidden="true"><use href="#i-gift"></use></svg>
+              </sc-if>
               <button type="button" class="{{x.heartClass}}" aria-pressed="{{x.ariaPicked}}" aria-label="{{x.pickLabel}}" sc-camel-on-click="{{x.togglePick}}">
                 <svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg>
               </button>
@@ -641,7 +647,12 @@ main{padding-block:30px 64px}
           <div class="card-inner">
             <div class="card-face front">
               <div class="{{item.picClass}}">
-                <svg class="ico" aria-hidden="true"><use href="{{item.iconHref}}"></use></svg>
+                <sc-if value="{{item.hasImg}}" hint-placeholder-val="{{false}}">
+                  <img class="photo" src="{{item.img}}" alt="{{item.title}}" loading="lazy" decoding="async">
+                </sc-if>
+                <sc-if value="{{item.noImg}}" hint-placeholder-val="{{true}}">
+                  <svg class="ico" aria-hidden="true"><use href="{{item.iconHref}}"></use></svg>
+                </sc-if>
                 <span class="{{item.condClass}}">{{item.condLabel}}</span>
                 <sc-if value="{{item.isSeasonal}}" hint-placeholder-val="{{false}}">
                   <span class="ribbon-season">Szezon</span>
@@ -854,6 +865,9 @@ var RAW = (
 "3928794912|Focis könyvek||Kiváló||2500"
 ).split('\n');
 
+var PHOTOS = {"10079373101":1,"10150209952":1,"10150230729":1,"10150260933":1,"10150275471":1,"10164850947":1,"10178766631":1,"10673022123":1,"10678784155":1,"10678821917":1,"10678876705":1,"10678914913":1,"10678932579":1,"10678968485":1,"10679042742":1,"10679068020":1,"10687697088":1,"10687721286":1,"10687737520":1,"10687920096":1,"10688053723":1,"10688096197":1,"10688177723":1,"10688211042":1,"10688293033":1,"10688457059":1,"10688476058":1,"10688499522":1,"10688762966":1,"10688786438":1,"10688801416":1,"10688868027":1,"10689068056":1,"10689155901":1,"10689330031":1,"10689534278":1,"10689570052":1,"10689607894":1,"10689674319":1,"10689760074":1,"10692964057":1,"10692988475":1,"10693048490":1,"10697538822":1,"10697608694":1,"10704037104":1,"10704144923":1,"10704519528":1,"10704596973":1,"10704660436":1,"10704826074":1,"3928948673":1,"4438054880":1,"6960061984":1,"6960077690":1,"6960094376":1,"6960103547":1,"7000062437":1,"7250652306":1,"7250664143":1,"7250673995":1,"7414013625":1,"7414033488":1,"7414054845":1,"7508347647":1,"7724422795":1,"7724430108":1,"7945707544":1,"7945715899":1,"9328154179":1}; /*PHOTOS*/
+function photo(id){ return PHOTOS[id] ? 'assets/img/' + id + '.jpg' : ''; }
+
 var HIDE = {};
 ['3928848340','3928844342','3928823294','3928798405','3928794912','3928855646','3993577737','3993548289',
  '9167396213','8808645659','7960455396','5125857514','4118734627'].forEach(function(id){ HIDE[id] = true; });
@@ -1037,6 +1051,9 @@ class Component extends DCLogic {
         catLabel: it.cat,
         isSeasonal: it.cat === 'Játékok és díszek',
         href: 'https://www.vinted.hu/items/' + it.id,
+        img: photo(it.id),
+        hasImg: !!PHOTOS[it.id],
+        noImg: !PHOTOS[it.id],
         cardClass: 'card' + (isFlipped ? ' flipped' : '') + (pf.picked ? ' picked' : ''),
         ariaFlipped: isFlipped ? 'true' : 'false',
         toggleFlip: function(){ self.toggleFlip(it.id); },
@@ -1054,6 +1071,9 @@ class Component extends DCLogic {
         title: it.title,
         priceLabel: ft(it.price),
         href: 'https://www.vinted.hu/items/' + it.id,
+        img: photo(it.id),
+        hasImg: !!PHOTOS[it.id],
+        noImg: !PHOTOS[it.id],
         heartClass: pf.heartClass,
         ariaPicked: pf.ariaPicked,
         pickLabel: pf.pickLabel,
