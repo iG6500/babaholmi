@@ -439,12 +439,30 @@ main{padding-block:30px 64px}
   .tools{margin-left:0}
   .count{margin-left:0}
   .grid{grid-template-columns:repeat(2,1fr);gap:10px}
-  .cardbody{padding:2px 10px 10px}
+  .cardbody{padding:2px 10px 10px;gap:5px}
+  .card-inner{aspect-ratio:10/19}
+  .pic{flex-basis:44%;margin:6px}
+  .cardbody h3{font-size:.95rem}
+  .tag{font-size:.72rem;padding:2px 8px}
   .price{font-size:1.1rem}
   .buy-btn span{display:none}
   .buy-btn{padding:10px}
   .stat{padding:16px 12px;border-left:none}
   .stat:first-child{padding-left:12px}
+  /* compact, non-sticky filters on phones */
+  .filterbar{position:relative;margin-top:18px}
+  .filterbar .wrap{padding-block:8px 10px;gap:6px}
+  .frow,.subfilters{flex-direction:column;align-items:stretch;gap:4px;flex-wrap:nowrap}
+  .flabel{font-size:.82rem}
+  .flabel .ico{width:15px;height:15px}
+  .chiprow{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;margin-inline:-16px;padding:10px 16px 4px;scroll-padding-inline:16px}
+  .chiprow::-webkit-scrollbar{display:none}
+  .chiprow > *{flex:none}
+  .cat-chip{font-size:.86rem;padding:3px 10px 3px 3px;gap:7px}
+  .cat-chip .bubble{width:28px;height:28px}
+  .cat-chip .bubble .ico{width:15px;height:15px}
+  .tag-chip{font-size:.8rem;padding:5px 11px 5px 21px}
+  .tools{flex-direction:row;align-items:center;gap:10px;margin-top:4px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
