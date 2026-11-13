@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="hu"><head>
+<meta charset="utf-8">
+<title>Babaholmi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/js/react.production.min.js"></script>
+<script src="assets/js/react-dom.production.min.js"></script>
+<script src="assets/js/dc-runtime.js"></script>
+<meta name="hz:slide-selector" content="[data-canvas-width]"><meta name="hz:canvas-width" content="1440"><meta name="hz:canvas-height" content="8000"></head>
+<body data-canvas-width="1440" data-canvas-height="8000" data-document-role="page" data-label="Babaholmi">
+<x-dc>
+<helmet>
+<style>/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-a.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-a.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/font-a.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/font-b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-c.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-d.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-c.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-d.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/font-c.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/font-d.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/fonts/font-c.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/fonts/font-d.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+:root{
+  --paper:#F8F6F1; --surface:#FFFFFF; --sand:#EFEADF; --line:#E2DED2;
+  --forest:#1E4034; --forest-deep:#132A22; --ink:#14231D; --muted:#58635B;
+  --sage:#7E8C76; --sage-ink:#4E5E49; --sage-soft:#E4EADF; --mist:#BFCBC2;
+  --lime:#D5DC2C; --lime-deep:#A8AE14; --lime-soft:#EEF2C6;
+  --f-display:'Outfit',system-ui,sans-serif;
+  --f-body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#F8F6F1;color:#14231D;font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:16px;line-height:1.55;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:'Outfit',system-ui,sans-serif;margin:0;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+button{font:inherit}
+html{scroll-behavior:smooth}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:clamp(14px,3vw,32px)}
+.ico{width:1.2em;height:1.2em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+:focus-visible{outline:3px solid #A8AE14;outline-offset:2px;border-radius:6px}
+
+/* ---- category tints (shared by chips and cards) ---- */
+.c-all{--t:#EFEADF}
+.c-ruha{--t:#F2E6DD}
+.c-cipo{--t:#DEE8E5}
+.c-kieg{--t:#EAE6DA}
+.c-jatek{--t:#EEF2C6}
+
+/* ---- motion ---- */
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-12px) rotate(var(--r,0deg))}}
+@keyframes popIn{0%{opacity:0;transform:scale(.6) rotate(-14deg)}100%{opacity:1;transform:scale(1) rotate(var(--rot,0deg))}}
+@keyframes drift{0%{transform:translateY(-10px);opacity:0}12%{opacity:.9}88%{opacity:.9}100%{transform:translateY(420px);opacity:0}}
+@keyframes pulseForest{0%{box-shadow:0 0 0 0 rgba(30,64,52,.45)}70%{box-shadow:0 0 0 14px rgba(30,64,52,0)}100%{box-shadow:0 0 0 0 rgba(30,64,52,0)}}
+@keyframes wiggle{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.08) rotate(-6deg)}}
+@keyframes jiggle{0%,100%{transform:rotate(0)}30%{transform:rotate(-12deg)}60%{transform:rotate(8deg)}}
+@keyframes heartPop{0%{transform:scale(.6)}55%{transform:scale(1.22)}100%{transform:scale(1)}}
+@keyframes bumpA{0%{transform:translateX(-50%) scale(.94)}50%{transform:translateX(-50%) scale(1.04)}100%{transform:translateX(-50%) scale(1)}}
+@keyframes bumpB{0%{transform:translateX(-50%) scale(.94)}50%{transform:translateX(-50%) scale(1.04)}100%{transform:translateX(-50%) scale(1)}}
+
+/* ---- buttons ---- */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:'Outfit',system-ui,sans-serif;font-weight:600;font-size:1rem;border-radius:999px;padding:13px 14px 13px 24px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn .arrow{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;flex:none;transition:transform .2s ease}
+.btn .arrow .ico{width:16px;height:16px}
+.btn:hover .arrow{transform:translateX(3px) rotate(-12deg)}
+.btn-light{background:#F8F6F1;color:#1E4034}
+.btn-light .arrow{background:#1E4034;color:#D5DC2C}
+.btn-light:hover{background:#D5DC2C;color:#132A22}
+.btn-forest{background:#1E4034;color:#F8F6F1;animation:pulseForest 2.4s ease-in-out infinite}
+.btn-forest .arrow{background:#D5DC2C;color:#132A22}
+.btn-forest:hover{background:#132A22;transform:translateY(-2px)}
+.btn-ghost{background:transparent;border-color:#E2DED2;color:#14231D;padding:11px 20px}
+.btn-ghost:hover{border-color:#1E4034}
+.btn.sm{padding:8px 14px;font-size:.88rem;gap:6px}
+
+/* ---- hero ---- */
+.hero{padding-top:14px}
+.hero-panel{position:relative;overflow:hidden;background:#1E4034;color:#F8F6F1;border-radius:34px;padding:20px clamp(20px,4vw,52px) 0;isolation:isolate}
+.hero-panel::before{
+  content:"";position:absolute;inset:-30% -20% auto auto;width:720px;height:620px;z-index:-1;pointer-events:none;
+  background:radial-gradient(circle at 60% 40%, color-mix(in srgb, #D5DC2C 26%, transparent) 0%, transparent 60%);
+  filter:blur(30px);
+}
+.hero-panel::after{
+  content:"";position:absolute;left:-12%;bottom:-40%;width:620px;height:520px;z-index:-1;pointer-events:none;
+  background:radial-gradient(circle, color-mix(in srgb, #7E8C76 40%, transparent) 0%, transparent 62%);
+  filter:blur(30px);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid rgba(248,246,241,.12)}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Outfit',system-ui,sans-serif;font-weight:700;font-size:1.45rem;letter-spacing:-.03em;color:#F8F6F1}
+.brand .ico{width:36px;height:36px;padding:7px;border-radius:50%;background:#D5DC2C;color:#132A22}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{text-decoration:none;color:#D9E1DB;font-weight:500;font-size:.95rem;padding:6px 0;border-bottom:2px solid transparent;transition:color .15s ease,border-color .15s ease}
+.nav-links a:hover{color:#D5DC2C;border-color:#D5DC2C}
+.nav-pill{display:inline-flex;align-items:center;gap:7px;background:#F8F6F1;color:#1E4034;border-radius:999px;padding:9px 16px;font-weight:700;font-size:.86rem}
+.nav-pill .ico{color:#4E5E49}
+.hero-grid{display:flex;flex-wrap:wrap;gap:36px;align-items:center;padding:46px 0 38px}
+.hero-copy{flex:1 1 460px;display:flex;flex-direction:column;gap:20px;max-width:600px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;border:1px solid rgba(248,246,241,.28);border-radius:999px;padding:6px 14px;font-weight:500;font-size:.84rem;color:#D9E1DB}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:#D5DC2C;display:block}
+h1{font-weight:700;font-size:clamp(2.4rem,5.4vw,4.2rem);line-height:1.02;letter-spacing:-.035em;text-wrap:balance;color:#F8F6F1}
+h1 em{font-style:normal;color:#D5DC2C}
+.lead{font-size:1.1rem;color:#C9D3CB;max-width:50ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:6px}
+.trustline{display:inline-flex;align-items:center;gap:7px;font-size:.88rem;color:#C9D3CB}
+.trustline .ico{color:#D5DC2C}
+
+.hero-visual{flex:1 1 400px;position:relative;min-height:420px}
+.note-card{position:absolute;top:4%;left:2%;width:210px;background:#F8F6F1;color:#14231D;border-radius:8px 8px 26px 8px;padding:20px 20px 18px;box-shadow:0 28px 44px -24px rgba(0,0,0,.6);animation:popIn .7s cubic-bezier(.34,1.56,.64,1) both;--rot:-5deg;transform:rotate(-5deg);z-index:2}
+.note-card strong{display:block;font-family:'Outfit',system-ui,sans-serif;font-weight:800;font-size:3.4rem;line-height:1;letter-spacing:-.04em;color:#1E4034}
+.note-card p{font-size:.88rem;color:#58635B;margin-top:6px}
+.dots{display:flex;gap:5px;margin-top:14px}
+.dots span{width:11px;height:11px;border-radius:3px;background:#1E4034}
+.dots span:nth-child(2){background:#D5DC2C}
+.dots span:nth-child(3){background:#7E8C76}
+.lime-block{position:absolute;right:0;bottom:2%;width:min(270px,62%);min-height:280px;background:#D5DC2C;color:#132A22;border-radius:30px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;transform:rotate(3deg);box-shadow:0 30px 50px -28px rgba(0,0,0,.6);transition:transform .25s cubic-bezier(.34,1.56,.64,1);z-index:1}
+.lime-block:hover{transform:rotate(0) translateY(-6px)}
+.lb-icon{display:grid;place-items:center;width:84px;height:84px;border-radius:24px;background:rgba(255,255,255,.45);animation:wiggle 3.2s ease-in-out infinite}
+.lb-icon .ico{width:46px;height:46px;stroke-width:1.6}
+.lb-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.lb-text strong{display:block;font-family:'Outfit',system-ui,sans-serif;font-weight:700;font-size:1.3rem;line-height:1.15}
+.lb-text span{font-size:.88rem;font-weight:500}
+.lb-go{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1E4034;color:#D5DC2C;flex:none;transition:transform .2s ease}
+.lime-block:hover .lb-go{transform:rotate(-30deg)}
+.sticker{position:absolute;display:grid;place-items:center;border-radius:50%;box-shadow:0 14px 26px -12px rgba(0,0,0,.5);animation:floaty var(--dur,4.5s) ease-in-out infinite;animation-delay:var(--delay,0s);z-index:3}
+.sticker .ico{width:46%;height:46%}
+.sticker.s1{top:0;right:10%;width:66px;height:66px;background:#F8F6F1;color:#1E4034;--dur:5s;--r:-8deg}
+.sticker.s2{top:58%;left:4%;width:56px;height:56px;background:#E4EADF;color:#1E4034;--dur:4.4s;--delay:.6s;--r:6deg}
+.sticker.s3{top:34%;left:52%;width:42px;height:42px;background:#D5DC2C;color:#132A22;--dur:3.8s;--delay:.3s;--r:10deg}
+
+.hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));border-top:1px solid rgba(248,246,241,.12)}
+.stat{display:flex;flex-direction:column;gap:2px;padding:22px 20px 24px;border-left:1px solid rgba(248,246,241,.12)}
+.stat:first-child{border-left:none;padding-left:0}
+.stat strong{font-family:'Outfit',system-ui,sans-serif;font-weight:700;font-size:2.1rem;line-height:1.1;letter-spacing:-.03em;color:#F8F6F1}
+.stat strong em{font-style:normal;color:#D5DC2C}
+.stat span{color:#BFCBC2;font-size:.88rem}
+
+/* ---- seasonal showcase ---- */
+.xmas{padding-top:22px}
+.xmas-panel{position:relative;overflow:hidden;background:#D5DC2C;color:#132A22;border-radius:34px;padding:34px clamp(20px,4vw,48px) 30px;isolation:isolate}
+.xmas-panel::before{content:"";position:absolute;right:-8%;top:-40%;width:520px;height:520px;border-radius:50%;background:rgba(255,255,255,.28);z-index:-1}
+.xmas-panel::after{content:"";position:absolute;left:-6%;bottom:-55%;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.18);z-index:-1}
+.season-ribbon{position:absolute;top:24px;right:-50px;width:190px;text-align:center;transform:rotate(40deg);background:#1E4034;color:#D5DC2C;font-family:'Outfit',system-ui,sans-serif;font-weight:800;font-size:.8rem;letter-spacing:.08em;padding:7px 0;z-index:2}
+.flakes{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+.flake{position:absolute;top:-4%;width:7px;height:7px;border-radius:50%;background:#fff;opacity:.85;animation-name:drift;animation-timing-function:linear;animation-iteration-count:infinite}
+.xmas-head{display:flex;flex-wrap:wrap;gap:18px 30px;align-items:flex-end;justify-content:space-between;margin-bottom:24px}
+.xmas-title{display:flex;flex-direction:column;gap:10px;max-width:640px}
+.kicker{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;background:#1E4034;color:#D5DC2C;border-radius:999px;padding:6px 13px;font-weight:700;font-size:.8rem}
+.kicker .ico{width:15px;height:15px}
+.xmas-title h2{font-weight:700;font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1.05}
+.xmas-title p{font-size:1.02rem;color:#2C3D16;max-width:56ch}
+.xmas-row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(196px,1fr);gap:14px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#1E4034 transparent}
+.mini{scroll-snap-align:start;background:#FFFFFF;border-radius:24px;padding:9px 9px 12px;display:flex;flex-direction:column;gap:8px;box-shadow:0 16px 28px -20px rgba(19,42,34,.6);transition:transform .2s cubic-bezier(.34,1.56,.64,1)}
+.mini:hover{transform:translateY(-5px) rotate(-1deg)}
+.mini-pic{position:relative;aspect-ratio:4/3;border-radius:18px;background:#EEF2C6;display:grid;place-items:center;color:#1E4034;background-image:radial-gradient(rgba(30,64,52,.09) 2px, transparent 2.6px);background-size:16px 16px}
+.mini-pic > .ico{width:38%;height:38%;stroke-width:1.4;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.mini:hover .mini-pic > .ico{transform:rotate(-10deg) scale(1.1)}
+.mini h3{font-weight:600;font-size:.96rem;line-height:1.25;padding:0 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.5em}
+.mini .buy{padding:0 2px 0 4px}
+
+/* ---- sticky filter bar ---- */
+.filterbar{position:sticky;top:0;z-index:5;margin-top:26px;background:color-mix(in srgb, #F8F6F1 92%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid #E2DED2}
+.filterbar .wrap{padding-block:12px;display:flex;flex-direction:column;gap:10px}
+.frow{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.flabel{display:inline-flex;align-items:center;gap:7px;font-family:'Outfit',system-ui,sans-serif;font-weight:600;font-size:.95rem;color:#14231D;white-space:nowrap}
+.flabel .ico{color:#4E5E49}
+.chiprow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.cat-chip{position:relative;display:inline-flex;align-items:center;gap:9px;border:1px solid #E2DED2;background:#FFFFFF;color:#14231D;font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:.92rem;font-weight:500;padding:5px 12px 5px 5px;border-radius:999px;cursor:pointer;transition:transform .15s ease,background .15s ease,border-color .15s ease,color .15s ease}
+.cat-chip .bubble{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--t);color:#1E4034;flex:none;transition:background .15s ease}
+.cat-chip .bubble .ico{width:18px;height:18px}
+.cat-chip:hover{transform:translateY(-2px);border-color:#7E8C76}
+.cat-chip:hover .bubble .ico{animation:jiggle .5s ease}
+.cat-chip .count{min-width:24px;height:22px;display:grid;place-items:center;padding:0 7px;border-radius:999px;background:#EFEADF;color:#58635B;font-size:.76rem;font-weight:700}
+.cat-chip.active{background:#1E4034;border-color:#1E4034;color:#F8F6F1}
+.cat-chip.active .bubble{background:#D5DC2C;color:#132A22}
+.cat-chip.active .count{background:rgba(255,255,255,.16);color:#F8F6F1}
+.szezon{position:absolute;top:-10px;right:-8px;background:#D5DC2C;color:#132A22;font-size:.66rem;font-weight:800;padding:2px 8px;border-radius:999px;transform:rotate(8deg);border:1px solid #A8AE14}
+.subfilters{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center}
+.tag-chip{position:relative;display:inline-flex;align-items:center;gap:6px;border:1px solid #E2DED2;background:#FFFFFF;color:#14231D;font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:.84rem;font-weight:500;padding:6px 13px 6px 23px;border-radius:6px 999px 999px 6px;cursor:pointer;transition:transform .15s ease,background .15s ease,border-color .15s ease}
+.tag-chip::before{content:"";position:absolute;left:9px;top:50%;width:7px;height:7px;border-radius:50%;border:2px solid #E2DED2;background:#F8F6F1;transform:translateY(-50%)}
+.tag-chip:hover{transform:translateY(-2px) rotate(-1deg);border-color:#7E8C76}
+.tag-chip .count{color:#58635B;font-size:.8em}
+.tag-chip.active{background:#D5DC2C;border-color:#A8AE14;color:#132A22;font-weight:700}
+.tag-chip.active::before{border-color:#1E4034}
+.tag-chip.active .count{color:#132A22}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-left:auto}
+.sortgroup select{font:inherit;font-size:.88rem;font-weight:500;color:#14231D;background:#FFFFFF;border:1px solid #E2DED2;border-radius:999px;padding:8px 14px;cursor:pointer}
+.reset-link{display:inline-flex;align-items:center;gap:5px;font-weight:700;font-size:.86rem;color:#1E4034;background:none;border:none;cursor:pointer;padding:6px 4px}
+.reset-link:hover{text-decoration:underline}
+
+/* ---- product grid ---- */
+main{padding-block:30px 64px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;margin-bottom:20px}
+.section-head h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700}
+.hint{display:inline-flex;align-items:center;gap:7px;font-size:.88rem;font-weight:500;color:#1E4034;background:#E4EADF;border-radius:999px;padding:7px 14px}
+.hint .ico{fill:currentColor;width:15px;height:15px}
+.count{color:#58635B;font-size:.95rem;font-weight:500;margin-left:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(236px,100%),1fr));gap:20px}
+
+.card{perspective:1400px}
+.card-inner{position:relative;width:100%;aspect-ratio:3/4;transition:transform .55s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d}
+.card.flipped{transform:scale(1.045);z-index:4;position:relative}
+.card.flipped .card-inner{transform:rotateY(180deg)}
+.card-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#FFFFFF;border:1px solid #E2DED2;border-radius:26px;display:flex;flex-direction:column;overflow:hidden;transition:box-shadow .2s ease,border-color .2s ease}
+.card:not(.flipped):hover .card-face.front{box-shadow:0 24px 40px -26px rgba(19,42,34,.5)}
+.card:not(.flipped):hover .card-inner{transform:translateY(-6px)}
+.card.picked .card-face.front{border-color:#1E4034;box-shadow:0 0 0 1px #1E4034}
+
+.pic{position:relative;flex:0 0 46%;display:grid;place-items:center;margin:8px;border-radius:20px;background-color:var(--t);color:#1E4034;background-image:radial-gradient(rgba(30,64,52,.08) 2px, transparent 2.6px);background-size:18px 18px}
+.pic > .ico{width:34%;height:34%;stroke-width:1.4;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.card:not(.flipped):hover .pic > .ico{transform:rotate(-8deg) scale(1.1)}
+.ribbon{position:absolute;top:10px;left:10px;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px}
+.ribbon.cond-new{background:#1E4034;color:#D5DC2C}
+.ribbon.cond-great{background:#FFFFFF;color:#1E4034}
+.ribbon.cond-good{background:#FFFFFF;color:#58635B}
+.ribbon-season{position:absolute;top:10px;right:10px;font-size:.72rem;font-weight:800;padding:4px 10px;border-radius:999px;background:#D5DC2C;color:#132A22}
+.cardbody{display:flex;flex-direction:column;gap:6px;padding:4px 16px 14px;flex:1;min-height:0}
+.cardbody h3{font-size:1.02rem;font-weight:600;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.76rem;font-weight:500;color:#58635B;background:#EFEADF;border-radius:999px;padding:3px 9px}
+.details-btn{align-self:flex-start;display:inline-flex;align-items:center;gap:5px;background:none;border:none;color:#4E5E49;font-weight:700;font-size:.8rem;cursor:pointer;padding:2px 0}
+.details-btn:hover{color:#1E4034;text-decoration:underline}
+.buy{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.price{font-family:'Outfit',system-ui,sans-serif;font-weight:700;font-size:1.3rem;letter-spacing:-.02em;color:#1E4034;white-space:nowrap}
+.buy-btn{display:inline-flex;align-items:center;gap:6px;flex:none;background:#D5DC2C;color:#132A22;font-family:'Outfit',system-ui,sans-serif;font-weight:600;font-size:.9rem;line-height:1;padding:10px 15px 10px 12px;border-radius:999px;text-decoration:none;transition:background .15s ease,color .15s ease,transform .15s ease}
+.buy-btn .ico{width:1.1em;height:1.1em}
+.buy-btn:hover{background:#1E4034;color:#D5DC2C;transform:translateY(-1px)}
+.buy-btn:active{transform:scale(.96)}
+
+.heart-btn{position:absolute;right:10px;bottom:10px;flex:none;width:44px;height:44px;min-width:44px;aspect-ratio:1/1;padding:0;border-radius:50%;border:none;background:#FFFFFF;color:#1E4034;display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 16px -10px rgba(19,42,34,.5);transition:transform .15s ease,background .15s ease}
+.heart-btn:hover{transform:scale(1.08)}
+.heart-btn .ico{width:20px;height:20px;flex:none}
+.heart-btn.on{background:#1E4034;color:#D5DC2C;animation:heartPop .45s cubic-bezier(.34,1.56,.64,1)}
+.heart-btn.on .ico{fill:currentColor}
+.heart-btn.inline{position:static;box-shadow:none;background:rgba(255,255,255,.12);color:#F8F6F1}
+.heart-btn.inline.on{background:#D5DC2C;color:#132A22}
+
+/* back face */
+.card-face.back{transform:rotateY(180deg);padding:20px;gap:12px;background:#1E4034;border-color:#1E4034;color:#F8F6F1}
+.card-face.back h3{font-size:1.05rem;font-weight:600}
+.specs{margin:0;display:flex;flex-direction:column;gap:8px;font-size:.86rem}
+.specs div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed rgba(248,246,241,.18);padding-bottom:7px}
+.specs dt{color:#BFCBC2}
+.specs dd{margin:0;font-weight:700;text-align:right}
+.back-note{font-size:.82rem;color:#BFCBC2;flex:1}
+.back-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.back-actions .btn-ghost{border-color:rgba(248,246,241,.3);color:#F8F6F1}
+.back-actions .btn-ghost:hover{border-color:#D5DC2C;color:#D5DC2C}
+
+.empty{padding:50px 20px;text-align:center;color:#58635B;display:flex;flex-direction:column;align-items:center;gap:14px}
+
+/* ---- tray ---- */
+.tray{position:fixed;left:50%;bottom:18px;z-index:20;width:min(560px,calc(100% - 28px));transform:translateX(-50%);background:#FFFFFF;color:#14231D;border:1px solid #E2DED2;border-radius:28px;box-shadow:0 26px 48px -20px rgba(19,42,34,.45);overflow:hidden}
+.tray.bump-a{animation:bumpA .45s cubic-bezier(.34,1.56,.64,1)}
+.tray.bump-b{animation:bumpB .45s cubic-bezier(.34,1.56,.64,1)}
+.tray-bar{display:flex;align-items:center;gap:12px;padding:10px 10px 10px 12px}
+.tray-badge{position:relative;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1E4034;color:#D5DC2C;flex:none}
+.tray-badge .ico{fill:currentColor;width:20px;height:20px}
+.tray-count{position:absolute;top:-5px;right:-5px;min-width:22px;height:22px;border-radius:999px;background:#D5DC2C;color:#132A22;font-size:.74rem;font-weight:800;display:grid;place-items:center;padding:0 5px;border:2px solid #FFFFFF}
+.tray-text{flex:1;min-width:0;display:flex;flex-direction:column}
+.tray-text strong{font-family:'Outfit',system-ui,sans-serif;font-weight:700;font-size:1.05rem;line-height:1.2}
+.tray-text span{font-size:.8rem;color:#58635B}
+.tray-toggle{flex:none;display:inline-flex;align-items:center;gap:6px;background:#1E4034;color:#F8F6F1;border:none;border-radius:999px;padding:12px 18px;font-family:'Outfit',system-ui,sans-serif;font-weight:600;font-size:.92rem;cursor:pointer;transition:background .15s ease,color .15s ease}
+.tray-toggle:hover{background:#D5DC2C;color:#132A22}
+.tray-list{list-style:none;margin:0;padding:4px 14px;max-height:300px;overflow:auto;background:#F8F6F1}
+.tray-list li{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid #E2DED2}
+.tray-list .t{flex:1;min-width:0;font-weight:500;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tray-list .p{font-family:'Outfit',system-ui,sans-serif;font-weight:700;color:#1E4034;white-space:nowrap}
+.tray-remove{display:grid;place-items:center;width:44px;height:44px;border:none;background:none;color:#58635B;cursor:pointer;border-radius:50%;flex:none}
+.tray-remove:hover{color:#1E4034;background:#EFEADF}
+.tray-remove .ico{width:16px;height:16px}
+.tray-note{padding:8px 14px 12px;font-size:.78rem;color:#58635B;background:#F8F6F1}
+
+/* ---- why ---- */
+.why{padding-block:30px 60px}
+.why-head{display:flex;flex-wrap:wrap;gap:16px 60px;align-items:flex-end;justify-content:space-between;margin-bottom:30px}
+.why-head h2{font-size:clamp(1.9rem,3.8vw,2.8rem);font-weight:700;line-height:1.05;max-width:14ch}
+.why-head p{max-width:44ch;color:#58635B}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:18px}
+.why-card{background:#FFFFFF;border:1px solid #E2DED2;border-radius:26px;padding:26px;display:flex;flex-direction:column;gap:14px;transition:transform .2s ease,box-shadow .2s ease}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 24px 40px -28px rgba(19,42,34,.5)}
+.why-card .ico-wrap{display:grid;place-items:center;width:50px;height:50px;border-radius:50%;background:#1E4034;color:#D5DC2C;box-shadow:0 0 0 8px #E4EADF;margin:8px 0 6px 8px}
+.why-card h3{font-size:1.12rem;font-weight:600}
+.why-card p{color:#58635B;font-size:.94rem}
+
+/* ---- footer ---- */
+.footer-panel{background:#132A22;color:#BFCBC2;border-radius:34px 34px 0 0;padding:34px clamp(20px,4vw,52px) 120px;display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between;align-items:center;font-size:.92rem}
+.footer-panel .brand{font-size:1.25rem}
+.footer-panel p{max-width:56ch}
+.footer-panel a.all{display:inline-flex;align-items:center;gap:6px;color:#D5DC2C;font-weight:700;text-decoration:none}
+.footer-panel a.all:hover{text-decoration:underline}
+
+@media (max-width:900px){
+  .nav-links{display:none}
+  .hero-visual{min-height:0;display:flex;flex-wrap:wrap;gap:14px;flex-basis:100%}
+  .note-card,.lime-block{position:relative;inset:auto;width:auto;flex:1 1 200px;--rot:0deg;transform:none}
+  .lime-block{min-height:200px}
+  .sticker{display:none}
+}
+@media (max-width:620px){
+  .tools{margin-left:0}
+  .count{margin-left:0}
+  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .cardbody{padding:2px 10px 10px}
+  .price{font-size:1.1rem}
+  .buy-btn span{display:none}
+  .buy-btn{padding:10px}
+  .stat{padding:16px 12px;border-left:none}
+  .stat:first-child{padding-left:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</helmet>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-bag" sc-camel-view-box="0 0 24 24"><path d="M6 8h12l1 12H5z"></path><path d="M9 8a3 3 0 0 1 6 0"></path></symbol>
+    <symbol id="i-shirt" sc-camel-view-box="0 0 24 24"><path d="M9 3 3 6l2 4 3-1v12h8V9l3 1 2-4-6-3a3 3 0 0 1-6 0z"></path></symbol>
+    <symbol id="i-shoe" sc-camel-view-box="0 0 24 24"><path d="M3 16v-5l5 1 3-4 3 3c4 0 7 1 7 4v2H3z"></path><path d="M3 18h18"></path></symbol>
+    <symbol id="i-hat" sc-camel-view-box="0 0 24 24"><path d="M3 16h18"></path><path d="M6 16c0-4 2.5-7 6-7s6 3 6 7"></path><path d="M6 13h12"></path></symbol>
+    <symbol id="i-gift" sc-camel-view-box="0 0 24 24"><path d="M4 8l8-4 8 4-8 4-8-4z"></path><path d="M4 8v9l8 4 8-4V8"></path><path d="M12 12v9"></path></symbol>
+    <symbol id="i-star" sc-camel-view-box="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6-4.6-4.1 6.1-.6z"></path></symbol>
+    <symbol id="i-out" sc-camel-view-box="0 0 24 24"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></symbol>
+    <symbol id="i-arrow" sc-camel-view-box="0 0 24 24"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></symbol>
+    <symbol id="i-shield" sc-camel-view-box="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></symbol>
+    <symbol id="i-check" sc-camel-view-box="0 0 24 24"><path d="M5 13l4 4L19 7"></path></symbol>
+    <symbol id="i-reset" sc-camel-view-box="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"></path></symbol>
+    <symbol id="i-back" sc-camel-view-box="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></symbol>
+    <symbol id="i-info" sc-camel-view-box="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5"></path><path d="M12 7.5h.01"></path></symbol>
+    <symbol id="i-baby" sc-camel-view-box="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M9 10v.5M15 10v.5"></path><path d="M9.5 14.5a3.5 3.5 0 0 0 5 0"></path></symbol>
+    <symbol id="i-search" sc-camel-view-box="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="m20 20-4.2-4.2"></path></symbol>
+    <symbol id="i-tag" sc-camel-view-box="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"></path><circle cx="7.5" cy="8.5" r="1.5"></circle></symbol>
+    <symbol id="i-heart" sc-camel-view-box="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-panel">
+      <nav class="nav" aria-label="Fő navigáció">
+        <div class="brand"><svg class="ico" aria-hidden="true"><use href="#i-baby"></use></svg>babaholmi</div>
+        <div class="nav-links">
+          <a href="#kinalat">Kínálat</a>
+          <a href="#karacsony">Karácsony</a>
+          <a href="#miert">Miért tőlem?</a>
+        </div>
+        <span class="nav-pill"><svg class="ico" aria-hidden="true"><use href="#i-shield"></use></svg>Vinted vevővédelem</span>
+      </nav>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><i aria-hidden="true"></i>Kisgyermekes anyáknak</span>
+          <h1>Gondosan válogatott babaholmik, amikből <em>új kedvencek</em> lesznek</h1>
+          <p class="lead">{{total}} szépen gondozott babaholmi vár új gazdira: ruhák, cipők, kiegészítők és játékok. Minden darabot én választottam ki és én írtam le az állapotát — a megrendelés pedig a Vinteden fut, vevővédelemmel.</p>
+          <div class="cta-row">
+            <a class="btn btn-light" href="#kinalat">Nézd meg a {{total}} darabot<span class="arrow"><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></span></a>
+            <span class="trustline"><svg class="ico" aria-hidden="true"><use href="#i-shield"></use></svg>Fizetés és szállítás a Vinteden</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="note-card">
+            <strong>1/1</strong>
+            <p>Minden darab egyedi — mindegyikből csak egy van.</p>
+            <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <a class="lime-block" href="#karacsony">
+            <span class="lb-icon"><svg class="ico" aria-hidden="true"><use href="#i-gift"></use></svg></span>
+            <span class="lb-foot">
+              <span class="lb-text"><strong>Karácsonyi válogatás</strong><span>{{toyCount}} játék és dísz</span></span>
+              <span class="lb-go"><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></span>
+            </span>
+          </a>
+          <span class="sticker s1" aria-hidden="true"><svg class="ico" aria-hidden="true"><use href="#i-shirt"></use></svg></span>
+          <span class="sticker s2" aria-hidden="true"><svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg></span>
+          <span class="sticker s3" aria-hidden="true"><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg></span>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat"><strong>79</strong><span>lezárt rendelés</span></div>
+        <div class="stat"><strong>5<em>/5</em></strong><span>értékelés a Vinteden</span></div>
+        <div class="stat"><strong>{{total}}</strong><span>aktív hirdetés</span></div>
+        <div class="stat"><strong>1<em>/1</em></strong><span>egyedi darabok</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="xmas" id="karacsony">
+  <div class="wrap">
+    <div class="xmas-panel">
+      <span class="season-ribbon" aria-hidden="true">SZEZON</span>
+      <div class="flakes" aria-hidden="true">
+        <span class="flake" style="left:4%;animation-duration:8s;animation-delay:0s"></span>
+        <span class="flake" style="left:13%;animation-duration:10s;animation-delay:1.4s;width:5px;height:5px"></span>
+        <span class="flake" style="left:24%;animation-duration:7.5s;animation-delay:.6s"></span>
+        <span class="flake" style="left:37%;animation-duration:9s;animation-delay:2.2s;width:5px;height:5px"></span>
+        <span class="flake" style="left:49%;animation-duration:8.4s;animation-delay:.9s"></span>
+        <span class="flake" style="left:61%;animation-duration:10.5s;animation-delay:1.8s;width:5px;height:5px"></span>
+        <span class="flake" style="left:73%;animation-duration:7.8s;animation-delay:.3s"></span>
+        <span class="flake" style="left:86%;animation-duration:9.6s;animation-delay:2.6s;width:5px;height:5px"></span>
+        <span class="flake" style="left:95%;animation-duration:8.8s;animation-delay:1.1s"></span>
+      </div>
+      <div class="xmas-head">
+        <div class="xmas-title">
+          <span class="kicker"><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg>Szezonális kiemelés</span>
+          <h2>Elkezdődött a karácsonyi készülődés</h2>
+          <p>{{toyCount}} horgolt figura, dísz és játék várja, hogy bekerüljön a fa alá vagy a gyerekszobába — mind 1/1 egyedi darab.</p>
+        </div>
+        <a class="btn btn-forest" href="#kinalat" sc-camel-on-click="{{showToys}}">Mind a {{toyCount}} megnézése<span class="arrow"><svg class="ico" aria-hidden="true"><use href="#i-arrow"></use></svg></span></a>
+      </div>
+      <div class="xmas-row" role="list" aria-label="Karácsonyi darabok">
+        <sc-for list="{{xmasItems}}" as="x" hint-placeholder-count="5">
+          <article class="mini" role="listitem">
+            <div class="mini-pic">
+              <svg class="ico" aria-hidden="true"><use href="#i-gift"></use></svg>
+              <button type="button" class="{{x.heartClass}}" aria-pressed="{{x.ariaPicked}}" aria-label="{{x.pickLabel}}" sc-camel-on-click="{{x.togglePick}}">
+                <svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg>
+              </button>
+            </div>
+            <h3>{{x.title}}</h3>
+            <div class="buy">
+              <span class="price">{{x.priceLabel}}</span>
+              <a class="buy-btn" href="{{x.href}}" target="_blank" rel="noopener" aria-label="Megveszem a Vinteden: {{x.title}}">
+                <svg class="ico" aria-hidden="true"><use href="#i-bag"></use></svg>
+                <span>Megveszem</span>
+              </a>
+            </div>
+          </article>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="filterbar">
+  <div class="wrap">
+    <div class="frow" role="group" aria-label="Kategóriák">
+      <span class="flabel"><svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>Mit keresel?</span>
+      <div class="chiprow">
+        <sc-for list="{{catChips}}" as="c" hint-placeholder-count="5">
+          <button type="button" class="{{c.chipClass}}" aria-pressed="{{c.ariaPressed}}" sc-camel-on-click="{{c.pick}}">
+            <span class="bubble"><svg class="ico" aria-hidden="true"><use href="{{c.iconHref}}"></use></svg></span>
+            <span>{{c.label}}</span>
+            <span class="count">{{c.count}}</span>
+            <sc-if value="{{c.isSeasonal}}" hint-placeholder-val="{{false}}">
+              <span class="szezon">Szezon</span>
+            </sc-if>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+    <div class="subfilters">
+      <sc-if value="{{hasAgeChips}}" hint-placeholder-val="{{true}}">
+        <div class="frow" role="group" aria-label="Korosztály szerint">
+          <span class="flabel"><svg class="ico" aria-hidden="true"><use href="#i-baby"></use></svg>Hány hónapos?</span>
+          <div class="chiprow">
+            <sc-for list="{{ageChips}}" as="a" hint-placeholder-count="4">
+              <button type="button" class="{{a.chipClass}}" aria-pressed="{{a.ariaPressed}}" sc-camel-on-click="{{a.pick}}">
+                <span>{{a.label}}</span>
+                <span class="count">{{a.count}}</span>
+              </button>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+      <div class="frow" role="group" aria-label="Ár szerint">
+        <span class="flabel"><svg class="ico" aria-hidden="true"><use href="#i-tag"></use></svg>Mennyit szánnál rá?</span>
+        <div class="chiprow">
+          <sc-for list="{{priceChips}}" as="pc" hint-placeholder-count="3">
+            <button type="button" class="{{pc.chipClass}}" aria-pressed="{{pc.ariaPressed}}" sc-camel-on-click="{{pc.pick}}">
+              <span>{{pc.label}}</span>
+              <span class="count">{{pc.count}}</span>
+            </button>
+          </sc-for>
+        </div>
+      </div>
+      <div class="tools">
+        <sc-if value="{{hasActiveFilters}}" hint-placeholder-val="{{false}}">
+          <button type="button" class="reset-link" sc-camel-on-click="{{resetFilters}}">
+            <svg class="ico" aria-hidden="true"><use href="#i-reset"></use></svg>Szűrők törlése
+          </button>
+        </sc-if>
+        <div class="sortgroup">
+          <label>
+            <span class="visually-hidden">Rendezés</span>
+            <sc-raw-select sc-camel-on-change="{{onSort}}" value="{{sortVal}}">
+              <option value="new">Legújabb elöl</option>
+              <option value="asc">Olcsóbbak elöl</option>
+              <option value="desc">Drágábbak elöl</option>
+            </sc-raw-select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="kinalat">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Válassz kedvedre</h2>
+      <span class="hint"><svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg>Szemezz! A szívvel összegyűjtheted a kedvenceidet.</span>
+      <p class="count" aria-live="polite">{{count}} találat</p>
+    </div>
+
+    <sc-if value="{{empty}}" hint-placeholder-val="{{false}}">
+      <div class="empty">
+        <p>Hoppá, erre most nincs találat. Lazíts egy kicsit a szűrőkön, biztosan lesz kedvedre való.</p>
+        <button type="button" class="btn btn-ghost" sc-camel-on-click="{{resetFilters}}">
+          <svg class="ico" aria-hidden="true"><use href="#i-reset"></use></svg>Szűrők törlése
+        </button>
+      </div>
+    </sc-if>
+
+    <div class="grid">
+      <sc-for list="{{cards}}" as="item" hint-placeholder-count="12">
+        <article class="{{item.cardClass}}">
+          <div class="card-inner">
+            <div class="card-face front">
+              <div class="{{item.picClass}}">
+                <svg class="ico" aria-hidden="true"><use href="{{item.iconHref}}"></use></svg>
+                <span class="{{item.condClass}}">{{item.condLabel}}</span>
+                <sc-if value="{{item.isSeasonal}}" hint-placeholder-val="{{false}}">
+                  <span class="ribbon-season">Szezon</span>
+                </sc-if>
+                <button type="button" class="{{item.heartClass}}" aria-pressed="{{item.ariaPicked}}" aria-label="{{item.pickLabel}}" sc-camel-on-click="{{item.togglePick}}">
+                  <svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg>
+                </button>
+              </div>
+              <div class="cardbody">
+                <h3>{{item.title}}</h3>
+                <div class="meta">
+                  <sc-if value="{{item.hasBrand}}" hint-placeholder-val="{{false}}">
+                    <span class="tag">{{item.brand}}</span>
+                  </sc-if>
+                  <sc-if value="{{item.hasSize}}" hint-placeholder-val="{{true}}">
+                    <span class="tag">{{item.sizeLabel}}</span>
+                  </sc-if>
+                </div>
+                <button type="button" class="details-btn" aria-expanded="{{item.ariaFlipped}}" sc-camel-on-click="{{item.toggleFlip}}">
+                  <svg class="ico" aria-hidden="true"><use href="#i-info"></use></svg>Részletek
+                </button>
+                <div class="buy">
+                  <span class="price">{{item.priceLabel}}</span>
+                  <a class="buy-btn" href="{{item.href}}" target="_blank" rel="noopener" aria-label="Megveszem a Vinteden: {{item.title}}">
+                    <svg class="ico" aria-hidden="true"><use href="#i-bag"></use></svg>
+                    <span>Megveszem</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-face back">
+              <h3>{{item.title}}</h3>
+              <dl class="specs">
+                <div><dt>Kategória</dt><dd>{{item.catLabel}}</dd></div>
+                <sc-if value="{{item.hasBrand}}" hint-placeholder-val="{{false}}">
+                  <div><dt>Márka</dt><dd>{{item.brand}}</dd></div>
+                </sc-if>
+                <div><dt>Méret</dt><dd>{{item.sizeLabel}}</dd></div>
+                <div><dt>Állapot</dt><dd>{{item.condLabel}}</dd></div>
+                <div><dt>Ár</dt><dd>{{item.priceLabel}}</dd></div>
+              </dl>
+              <p class="back-note">A teljes leírást és további fotókat a Vinted hirdetésen találod.</p>
+              <div class="back-actions">
+                <button type="button" class="btn btn-ghost sm" sc-camel-on-click="{{item.toggleFlip}}">
+                  <svg class="ico" aria-hidden="true"><use href="#i-back"></use></svg>Vissza
+                </button>
+                <button type="button" class="{{item.heartInlineClass}}" aria-pressed="{{item.ariaPicked}}" aria-label="{{item.pickLabel}}" sc-camel-on-click="{{item.togglePick}}">
+                  <svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg>
+                </button>
+                <a class="buy-btn" href="{{item.href}}" target="_blank" rel="noopener" aria-label="Megveszem a Vinteden: {{item.title}}">
+                  <svg class="ico" aria-hidden="true"><use href="#i-bag"></use></svg>
+                  <span>Megveszem</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</main>
+
+<section class="why" id="miert">
+  <div class="wrap">
+    <div class="why-head">
+      <h2>Miért biztonságos tőlem venni?</h2>
+      <p>Nem egy anonim raktárból rendelsz — minden darabot a saját gyermekeim ruhái, cipői és játékai közül válogatok össze.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="ico-wrap"><svg class="ico" aria-hidden="true"><use href="#i-star"></use></svg></span>
+        <h3>79 lezárt rendelés, 5/5</h3>
+        <p>Minden eddigi vásárlóm 5 csillagos értékelést hagyott — a Vinted profilomon bárki ellenőrizheti.</p>
+      </div>
+      <div class="why-card">
+        <span class="ico-wrap"><svg class="ico" aria-hidden="true"><use href="#i-check"></use></svg></span>
+        <h3>Becsületes állapotleírás</h3>
+        <p>Minden hirdetésnél valós állapotot jelölök — Új, Kiváló vagy Jó —, soha nem szépítek egy kopást vagy foltot.</p>
+      </div>
+      <div class="why-card">
+        <span class="ico-wrap"><svg class="ico" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+        <h3>Vinted vevővédelem</h3>
+        <p>A fizetés és a szállítás a Vinted rendszerén megy, vevővédelemmel. Kérdésed van? Írj a Vinteden, szívesen segítek.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-panel">
+      <div class="brand"><svg class="ico" aria-hidden="true"><use href="#i-baby"></use></svg>babaholmi</div>
+      <p>A megrendelés, a fizetés és a szállítás a Vinteden történik. Az árak a hirdetés ára — a Vinted vevővédelmi díja a fizetéskor adódik hozzá.</p>
+      <a class="all" href="https://www.vinted.hu/member/180210647" target="_blank" rel="noopener">További hirdetéseim a Vinteden<svg class="ico" aria-hidden="true"><use href="#i-out"></use></svg></a>
+    </div>
+  </div>
+</footer>
+
+<sc-if value="{{hasPicks}}" hint-placeholder-val="{{false}}">
+  <aside class="{{trayClass}}" aria-label="Kiszemelt darabjaid">
+    <sc-if value="{{trayOpen}}" hint-placeholder-val="{{false}}">
+      <ul class="tray-list">
+        <sc-for list="{{pickItems}}" as="pk" hint-placeholder-count="2">
+          <li>
+            <span class="t">{{pk.title}}</span>
+            <span class="p">{{pk.priceLabel}}</span>
+            <a class="buy-btn" href="{{pk.href}}" target="_blank" rel="noopener" aria-label="Megveszem a Vinteden: {{pk.title}}"><svg class="ico" aria-hidden="true"><use href="#i-bag"></use></svg><span>Megveszem</span></a>
+            <button type="button" class="tray-remove" aria-label="Eltávolítom: {{pk.title}}" sc-camel-on-click="{{pk.remove}}"><svg class="ico" aria-hidden="true"><use href="#i-reset"></use></svg></button>
+          </li>
+        </sc-for>
+      </ul>
+      <p class="tray-note">Mind 1/1 darab: a Megveszem gomb a Vinted-hirdetést nyitja, ott vevővédelemmel fizetsz.</p>
+    </sc-if>
+    <div class="tray-bar">
+      <span class="tray-badge"><svg class="ico" aria-hidden="true"><use href="#i-heart"></use></svg><span class="tray-count">{{pickCount}}</span></span>
+      <div class="tray-text" aria-live="polite">
+        <strong>{{trayMsg}}</strong>
+        <span>{{pickCount}} kiszemelt darab · összesen {{pickTotalLabel}}</span>
+      </div>
+      <button type="button" class="tray-toggle" aria-expanded="{{trayOpenAria}}" sc-camel-on-click="{{toggleTray}}">{{trayToggleLabel}}</button>
+    </div>
+  </aside>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:8600}}">
+var RAW = (
+"10704826074|Baba ruhacsomag 23 db||Kiváló|9–12 hónap / 74 cm|5500\n" +
+"10704660436|Kislány ruha|So Cute|Kiváló|12–18 hónap / 80 cm|500\n" +
+"10704596973|4 db babaruha|Chicco|Kiváló|3–6 hónap / 62 cm|2000\n" +
+"10704519528|Hatalmas ruhacsomag XXL 44 db||Kiváló|3–6 hónap / 62 cm|8500\n" +
+"10704144923|Gyönyörű ruhacsomag 12 db||Kiváló|1–3 hónap / 56 cm|3500\n" +
+"10704037104|Napkalap és előke|Pepco|Kiváló|3–6 hónap|1000\n" +
+"10697608694|Kocsikabát|Fox & Bunny|Kiváló|6–9 hónap / 68 cm|800\n" +
+"10697538822|Téli overál|F&F|Kiváló|6–9 hónap / 68 cm|1000\n" +
+"10693048490|Zoknik 21 db|Girls|Jó|19–21|1000\n" +
+"10692988475|Sapkacsomag||Kiváló|Egy méret|1200\n" +
+"10692964057|Sapkacsomag 15 db||Jó|Egy méret|1500\n" +
+"10689760074|Kislány ruhacsomag|So Cute|Jó|12–18 hónap / 80 cm|2500\n" +
+"10689674319|Kislány ruhacsomag|PatPat|Jó|9–12 hónap / 74 cm|1500\n" +
+"10689607894|Kislány ruhacsomag|Berti|Jó|9–12 hónap / 74 cm|1500\n" +
+"10689570052|Kislány ruhacsomag|Baby Club|Jó|3–6 hónap / 62 cm|1200\n" +
+"10689534278|Ruhacsomag|So Cute|Jó|18–24 hónap / 86 cm|1500\n" +
+"10689330031|Trikóbodyk|Liegelind|Jó|3–6 hónap / 62 cm|600\n" +
+"10689155901|Kislány ruhacsomag|Pepco|Jó|24–36 hónap / 92 cm|2500\n" +
+"10689068056|Trikóbodyk|Sinsay|Kiváló|18–24 hónap / 86 cm|800\n" +
+"10688868027|Kis díszszandál|Baby|Új|16|800\n" +
+"10688801416|Kiscipő|Pepco|Kiváló|19|400\n" +
+"10688786438|Kislány dzseki|In Extenso|Kiváló|6–9 hónap / 68 cm|700\n" +
+"10688762966|Tavaszi kabát|Ergee|Kiváló|9–12 hónap / 74 cm|600\n" +
+"10688499522|Meleg rugdalózó|Fred & Flo|Kiváló|9–12 hónap / 74 cm|500\n" +
+"10688476058|Köntös|Primark|Kiváló|12–18 hónap / 80 cm|1000\n" +
+"10688457059|Kantáros ruhák|M&Co|Kiváló|6–9 hónap / 68 cm|1200\n" +
+"10688293033|Meleg farmercsomag|Liegelind|Kiváló|9–12 hónap / 74 cm|1500\n" +
+"10688211042|80-as ruhacsomag|Pepco|Kiváló|12–18 hónap / 80 cm|2000\n" +
+"10688177723|86-os 6 db-os ruhacsomag|So Cute|Kiváló|18–24 hónap / 86 cm|600\n" +
+"10688096197|Kislány csomag|Disney|Kiváló|9–12 hónap / 74 cm|2000\n" +
+"10688053723|Pulóvercsomag|Next|Kiváló|6–9 hónap / 68 cm|1500\n" +
+"10687920096|3 kisruha|Fred & Flo|Kiváló|18–24 hónap / 86 cm|900\n" +
+"10687737520|2 db kismellény|Albimini|Jó|6–9 hónap / 68 cm|600\n" +
+"10687721286|Kislány pulóver||Kiváló|12–18 hónap / 80 cm|1500\n" +
+"10687697088|Vízhatlan dzseki|So Cute|Kiváló|18–24 hónap / 86 cm|800\n" +
+"10679068020|Strandpapucs|Cupcake Couture|Kiváló|22|1000\n" +
+"10679042742|Fürdős szandál|Everlast|Kiváló|23|750\n" +
+"10678968485|Kislány sportcipő|Skechers|Kiváló|22|3000\n" +
+"10678932579|Kislány cipő|Pepco|Kiváló|21|600\n" +
+"10678914913|Kislány balerina cipő|Sinsay|Kiváló|23|1000\n" +
+"10678876705|Plüss rugdalózók|Pusblu|Jó|24–36 hónap / 92 cm|800\n" +
+"10678821917|Kantáros nadrág||Kiváló|24–36 hónap / 92 cm|600\n" +
+"10678784155|Vízhatlan nadrág|Lupilu|Kiváló|18–24 hónap / 86 cm|1200\n" +
+"10673022123|Adidas Disney sport cipő|adidas|Kiváló|20|4500\n" +
+"10178766631|Gyermek könyvcsomag||Kiváló||10000\n" +
+"10164850947|Kinder figurák|Kinder|Új|Egy méret|1000\n" +
+"10150275471|Horgolt karácsonyi akasztható dísz||Új||800\n" +
+"10150260933|Horgolt akasztható karácsonyi dísz||Új||800\n" +
+"10150230729|Horgolt karácsonyi akasztós dísz||Új||800\n" +
+"10150209952|Horgolt akasztható kiskoszorú||Új||800\n" +
+"10079373101|Őszi hálózsák||Kiváló||4000\n" +
+"9328154179|Playgo készségfejlesztő asztal|Playgo|Kiváló|Egy méret|9990\n" +
+"9167396213|Fekete alkalmi ruha||Kiváló|S / 36 / 8|2000\n" +
+"8808645659|Hatalmas női ruhacsomag||Jó|XS|9500\n" +
+"7960455396|Női bokacsizma|Seastar|Kiváló|36|1250\n" +
+"7945715899|Horgolt hercegnő||Új|Egy méret|9990\n" +
+"7945707544|Horgolt hercegnő||Új|Egy méret|9990\n" +
+"7724430108|Hóember||Új|Egy méret|3500\n" +
+"7724422795|Horgolt télapó||Új|Egy méret|3500\n" +
+"7508347647|Mini grincs||Új|Egy méret|2500\n" +
+"7414054845|Horgolt baba||Új|Egy méret|9990\n" +
+"7414033488|Hercegnő||Új|Egy méret|9990\n" +
+"7414013625|Hercegnő||Új|Egy méret|9990\n" +
+"7250673995|Horgolt hercegnő||Új|Egy méret|9990\n" +
+"7250664143|Horgolt hercegnő||Új|Egy méret|9990\n" +
+"7250652306|Horgolt hercegnő||Új|Egy méret|9990\n" +
+"7000062437|Horgolt hercegnő||Új|Egy méret|9990\n" +
+"6960103547|Hercegnő||Új|Egy méret|9990\n" +
+"6960094376|Hercegnő||Új|Egy méret|9990\n" +
+"6960077690|Hercegnő||Új|Egy méret|9990\n" +
+"6960061984|Horgolt hercegnő||Új|Egy méret|9990\n" +
+"5125857514|Menyecske ruha||Kiváló|XS / 34 / 6|6000\n" +
+"4438054880|Szülés utáni hasszorító||Új||1390\n" +
+"4118734627|Tornacipő 37-es|Sinsay|Kiváló|37|1200\n" +
+"3993577737|Scarlett||Kiváló||750\n" +
+"3993548289|Klikk||Kiváló||2250\n" +
+"3928948673|Alkalmi szandál|Lemon Tree|Kiváló|35|1200\n" +
+"3928855646|Gazdaság és gazdaságtudományok||Kiváló||1250\n" +
+"3928848340|Mielőtt megismertelek||Kiváló||2000\n" +
+"3928844342|Kőhalmi Zoltán||Kiváló||1700\n" +
+"3928823294|Elrabolt életek||Kiváló||2000\n" +
+"3928798405|Pszichológiai könyvek||Kiváló||2000\n" +
+"3928794912|Focis könyvek||Kiváló||2500"
+).split('\n');
+
+var HIDE = {};
+['3928848340','3928844342','3928823294','3928798405','3928794912','3928855646','3993577737','3993548289',
+ '9167396213','8808645659','7960455396','5125857514','4118734627'].forEach(function(id){ HIDE[id] = true; });
+
+function categorize(title){
+  var t = title.toLowerCase();
+  if (/horgolt|hercegnő|hóember|grincs|kinder|playgo|könyv/.test(t)) return 'Játékok és díszek';
+  if (/cipő|szandál|papucs|csizma/.test(t)) return 'Cipők';
+  if (/sapka|napkalap|zokni|hasszorító/.test(t)) return 'Kiegészítők';
+  return 'Ruhák';
+}
+function ageKey(size){
+  var m = size.match(/^(\d+)–(\d+) hónap/);
+  return m ? {label: m[1] + '–' + m[2] + ' hó', order: +m[1]} : null;
+}
+
+var ITEMS = RAW.filter(function(line){
+  return !HIDE[line.split('|')[0]];
+}).map(function(line, idx){
+  var parts = line.split('|');
+  var it = {id:parts[0], title:parts[1], brand:parts[2], cond:parts[3], size:parts[4], price:+parts[5], idx:idx};
+  it.cat = categorize(it.title);
+  it.age = ageKey(it.size);
+  return it;
+});
+
+var CAT_ORDER = ['Mind','Játékok és díszek','Ruhák','Cipők','Kiegészítők'];
+var CAT_META = {
+  'Mind':{cls:'c-all', icon:'#i-bag'},
+  'Ruhák':{cls:'c-ruha', icon:'#i-shirt'},
+  'Cipők':{cls:'c-cipo', icon:'#i-shoe'},
+  'Kiegészítők':{cls:'c-kieg', icon:'#i-hat'},
+  'Játékok és díszek':{cls:'c-jatek', icon:'#i-gift'}
+};
+var COND_META = {
+  'Új':{cls:'cond-new', label:'Új'},
+  'Kiváló':{cls:'cond-great', label:'Kiváló állapot'},
+  'Jó':{cls:'cond-good', label:'Jó állapot'}
+};
+
+
+var PRICE_BANDS = [
+  {key:'lt1000', label:'1 000 Ft alatt', test:function(p){ return p < 1000; }},
+  {key:'mid', label:'1 000–3 000 Ft', test:function(p){ return p >= 1000 && p <= 3000; }},
+  {key:'gt3000', label:'3 000 Ft felett', test:function(p){ return p > 3000; }}
+];
+var ITEM_BY_ID = {};
+ITEMS.forEach(function(it){ ITEM_BY_ID[it.id] = it; });
+var XMAS = ITEMS.filter(function(it){ return /karácsonyi|kiskoszorú|hóember|télapó|grincs/i.test(it.title); });
+function ft(n){ return n.toLocaleString('hu-HU') + ' Ft'; }
+
+class Component extends DCLogic {
+  constructor(props){
+    super(props);
+    this.state = {cat:'Mind', age:null, price:null, sort:'new', flippedId:null, picks:[], trayOpen:false, bump:0};
+    this.setCat = this.setCat.bind(this);
+    this.toggleAge = this.toggleAge.bind(this);
+    this.togglePrice = this.togglePrice.bind(this);
+    this.onSort = this.onSort.bind(this);
+    this.resetFilters = this.resetFilters.bind(this);
+    this.showToys = this.showToys.bind(this);
+    this.toggleFlip = this.toggleFlip.bind(this);
+    this.togglePick = this.togglePick.bind(this);
+    this.toggleTray = this.toggleTray.bind(this);
+  }
+  setCat(key){ this.setState({cat:key, age:null, flippedId:null}); }
+  toggleAge(label){ this.setState({age: this.state.age === label ? null : label, flippedId:null}); }
+  togglePrice(key){ this.setState({price: this.state.price === key ? null : key, flippedId:null}); }
+  onSort(e){ this.setState({sort: e.target.value}); }
+  resetFilters(){ this.setState({cat:'Mind', age:null, price:null, sort:'new', flippedId:null}); }
+  showToys(){ this.setState({cat:'Játékok és díszek', age:null, price:null, flippedId:null}); }
+  toggleFlip(id){ this.setState({flippedId: this.state.flippedId === id ? null : id}); }
+  togglePick(id){
+    var picks = this.state.picks.slice();
+    var i = picks.indexOf(id);
+    var adding = i === -1;
+    if (adding) picks.push(id); else picks.splice(i, 1);
+    this.setState({
+      picks: picks,
+      bump: adding ? (this.state.bump === 1 ? 2 : 1) : this.state.bump,
+      trayOpen: picks.length ? this.state.trayOpen : false
+    });
+  }
+  toggleTray(){ this.setState({trayOpen: !this.state.trayOpen}); }
+  matches(it, opts){
+    opts = opts || {};
+    if (!opts.ignoreCat && this.state.cat !== 'Mind' && it.cat !== this.state.cat) return false;
+    if (!opts.ignoreAge && this.state.age && (!it.age || it.age.label !== this.state.age)) return false;
+    if (!opts.ignorePrice && this.state.price){
+      var key = this.state.price;
+      var band = PRICE_BANDS.filter(function(b){ return b.key === key; })[0];
+      if (band && !band.test(it.price)) return false;
+    }
+    return true;
+  }
+  pickFields(it){
+    var self = this;
+    var picked = this.state.picks.indexOf(it.id) !== -1;
+    return {
+      picked: picked,
+      heartClass: 'heart-btn' + (picked ? ' on' : ''),
+      heartInlineClass: 'heart-btn inline' + (picked ? ' on' : ''),
+      ariaPicked: picked ? 'true' : 'false',
+      pickLabel: (picked ? 'Kiszemelve: ' : 'Kiszemelem: ') + it.title,
+      togglePick: function(){ self.togglePick(it.id); }
+    };
+  }
+  renderVals(){
+    var self = this;
+
+    var catChips = CAT_ORDER.filter(function(key){
+      return key === 'Mind' || ITEMS.some(function(it){ return it.cat === key; });
+    }).map(function(key){
+      var n = ITEMS.filter(function(it){
+        return (key === 'Mind' || it.cat === key) && self.matches(it, {ignoreCat:true});
+      }).length;
+      var active = self.state.cat === key;
+      var meta = CAT_META[key];
+      return {
+        label: key === 'Mind' ? 'Minden' : key,
+        iconHref: meta.icon,
+        count: n,
+        ariaPressed: active ? 'true' : 'false',
+        chipClass: 'cat-chip ' + meta.cls + (active ? ' active' : ''),
+        isSeasonal: key === 'Játékok és díszek',
+        pick: function(){ self.setCat(key); }
+      };
+    });
+
+    var ageMap = {}, ageOrder = [];
+    ITEMS.forEach(function(it){
+      if (it.age && self.matches(it, {ignoreAge:true})){
+        if (!ageMap[it.age.label]){ ageMap[it.age.label] = {order: it.age.order, n: 0}; ageOrder.push(it.age.label); }
+        ageMap[it.age.label].n++;
+      }
+    });
+    ageOrder.sort(function(a,b){ return ageMap[a].order - ageMap[b].order; });
+    var ageChips = ageOrder.map(function(label){
+      var active = self.state.age === label;
+      return {
+        label: label,
+        count: ageMap[label].n,
+        ariaPressed: active ? 'true' : 'false',
+        chipClass: 'tag-chip' + (active ? ' active' : ''),
+        pick: function(){ self.toggleAge(label); }
+      };
+    });
+
+    var priceChips = PRICE_BANDS.map(function(b){
+      var n = ITEMS.filter(function(it){ return self.matches(it, {ignorePrice:true}) && b.test(it.price); }).length;
+      var active = self.state.price === b.key;
+      return {
+        label: b.label,
+        count: n,
+        ariaPressed: active ? 'true' : 'false',
+        chipClass: 'tag-chip' + (active ? ' active' : ''),
+        pick: function(){ self.togglePrice(b.key); }
+      };
+    });
+
+    var list = ITEMS.filter(function(it){ return self.matches(it, {}); });
+    if (this.state.sort === 'asc') list = list.slice().sort(function(a,b){ return a.price - b.price || a.idx - b.idx; });
+    else if (this.state.sort === 'desc') list = list.slice().sort(function(a,b){ return b.price - a.price || a.idx - b.idx; });
+
+    var cards = list.map(function(it){
+      var cm = CAT_META[it.cat] || CAT_META['Ruhák'];
+      var cond = COND_META[it.cond] || COND_META['Jó'];
+      var isFlipped = self.state.flippedId === it.id;
+      var pf = self.pickFields(it);
+      return {
+        title: it.title,
+        brand: it.brand,
+        hasBrand: !!it.brand,
+        sizeLabel: /^\d+$/.test(it.size) ? ('Méret: ' + it.size) : (it.size || 'Egy méret'),
+        hasSize: !!it.size,
+        priceLabel: ft(it.price),
+        picClass: 'pic ' + cm.cls,
+        iconHref: cm.icon,
+        condClass: 'ribbon ' + cond.cls,
+        condLabel: cond.label,
+        catLabel: it.cat,
+        isSeasonal: it.cat === 'Játékok és díszek',
+        href: 'https://www.vinted.hu/items/' + it.id,
+        cardClass: 'card' + (isFlipped ? ' flipped' : '') + (pf.picked ? ' picked' : ''),
+        ariaFlipped: isFlipped ? 'true' : 'false',
+        toggleFlip: function(){ self.toggleFlip(it.id); },
+        heartClass: pf.heartClass,
+        heartInlineClass: pf.heartInlineClass,
+        ariaPicked: pf.ariaPicked,
+        pickLabel: pf.pickLabel,
+        togglePick: pf.togglePick
+      };
+    });
+
+    var xmasItems = XMAS.map(function(it){
+      var pf = self.pickFields(it);
+      return {
+        title: it.title,
+        priceLabel: ft(it.price),
+        href: 'https://www.vinted.hu/items/' + it.id,
+        heartClass: pf.heartClass,
+        ariaPicked: pf.ariaPicked,
+        pickLabel: pf.pickLabel,
+        togglePick: pf.togglePick
+      };
+    });
+
+    var picks = this.state.picks;
+    var pickItems = picks.map(function(id){
+      var it = ITEM_BY_ID[id];
+      return {
+        title: it.title,
+        priceLabel: ft(it.price),
+        href: 'https://www.vinted.hu/items/' + it.id,
+        remove: function(){ self.togglePick(it.id); }
+      };
+    });
+    var pickTotal = picks.reduce(function(sum, id){ return sum + ITEM_BY_ID[id].price; }, 0);
+    var n = picks.length;
+    var trayMsg = n === 1 ? 'Jó választás!' : (n === 2 ? 'Szép kis csomag készül!' : 'Igazi kincsesláda!');
+    var bumpCls = this.state.bump === 1 ? ' bump-a' : (this.state.bump === 2 ? ' bump-b' : '');
+    var toyCount = ITEMS.filter(function(it){ return it.cat === 'Játékok és díszek'; }).length;
+
+    return {
+      total: ITEMS.length,
+      toyCount: toyCount,
+      xmasItems: xmasItems,
+      count: cards.length,
+      catChips: catChips,
+      ageChips: ageChips,
+      hasAgeChips: ageChips.length > 0,
+      priceChips: priceChips,
+      cards: cards,
+      empty: cards.length === 0,
+      hasActiveFilters: this.state.cat !== 'Mind' || !!this.state.age || !!this.state.price,
+      sortVal: this.state.sort,
+      onSort: this.onSort,
+      resetFilters: this.resetFilters,
+      showToys: this.showToys,
+      hasPicks: n > 0,
+      pickCount: n,
+      pickItems: pickItems,
+      pickTotalLabel: ft(pickTotal),
+      trayMsg: trayMsg,
+      trayClass: 'tray' + bumpCls,
+      trayOpen: this.state.trayOpen,
+      trayOpenAria: this.state.trayOpen ? 'true' : 'false',
+      trayToggleLabel: this.state.trayOpen ? 'Becsukom' : 'Megnézem',
+      toggleTray: this.toggleTray
+    };
+  }
+}
+</script>
+
+
+</body></html>
