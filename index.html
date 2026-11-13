@@ -438,18 +438,13 @@ main{padding-block:30px 64px}
 @media (max-width:620px){
   .tools{margin-left:0}
   .count{margin-left:0}
-  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
-  .cardbody{padding:2px 10px 10px;gap:5px}
-  .card-inner{aspect-ratio:10/19}
-  /* gentle row-by-row snapping in the product grid */
+  /* one product per screen, gently snapped card by card */
+  .grid{grid-template-columns:1fr;gap:16px}
+  .card-inner{aspect-ratio:auto;height:min(560px,calc(100svh - 120px))}
+  .pic{flex:1 1 auto;min-height:0}
+  .cardbody{flex:0 0 auto;padding:4px 18px 16px;gap:8px}
   html{scroll-snap-type:y proximity}
-  .grid .card{scroll-snap-align:start;scroll-margin-top:12px}
-  .pic{flex-basis:44%;margin:6px}
-  .cardbody h3{font-size:.95rem}
-  .tag{font-size:.72rem;padding:2px 8px}
-  .price{font-size:1.1rem}
-  .buy-btn span{display:none}
-  .buy-btn{padding:10px}
+  .grid .card{scroll-snap-align:center}
   .stat{padding:16px 12px;border-left:none}
   .stat:first-child{padding-left:12px}
   /* compact, non-sticky filters on phones */
