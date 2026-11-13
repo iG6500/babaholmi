@@ -441,6 +441,9 @@ main{padding-block:30px 64px}
   .grid{grid-template-columns:repeat(2,1fr);gap:10px}
   .cardbody{padding:2px 10px 10px;gap:5px}
   .card-inner{aspect-ratio:10/19}
+  /* gentle row-by-row snapping in the product grid */
+  html{scroll-snap-type:y proximity}
+  .grid .card{scroll-snap-align:start;scroll-margin-top:12px}
   .pic{flex-basis:44%;margin:6px}
   .cardbody h3{font-size:.95rem}
   .tag{font-size:.72rem;padding:2px 8px}
