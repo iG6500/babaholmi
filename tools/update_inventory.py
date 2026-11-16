@@ -172,6 +172,10 @@ def main():
               *[f'\n  ? {r[0]} {r[1]}' for r in suspicious])
     if DRY:
         return
+    photos_missing = [r for r in visible if not os.path.exists(os.path.join(IMG_DIR, r[0] + '.jpg'))]
+    if not (removed or added or repriced or photos_missing):
+        print('Nincs változás, semmihez nem nyúltam.')
+        return
 
     os.makedirs(IMG_DIR, exist_ok=True)
     for r in removed:
