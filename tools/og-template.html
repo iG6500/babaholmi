@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="hu"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'DM Sans';font-weight:100 900;src:url("../assets/fonts/font-b.woff2") format('woff2');unicode-range:U+0000-00FF}
+@font-face{font-family:'DM Sans';font-weight:100 900;src:url("../assets/fonts/font-a.woff2") format('woff2');unicode-range:U+0100-02BA}
+@font-face{font-family:'Outfit';font-weight:100 900;src:url("../assets/fonts/font-d.woff2") format('woff2');unicode-range:U+0000-00FF}
+@font-face{font-family:'Outfit';font-weight:100 900;src:url("../assets/fonts/font-c.woff2") format('woff2');unicode-range:U+0100-02BA}
+*{box-sizing:border-box}
+html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:#F8F6F1}
+.card{position:absolute;inset:0;background:#1E4034;color:#F8F6F1;display:flex;font-family:'DM Sans',sans-serif;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 18% 10%,rgba(213,220,44,.16),transparent 45%)}
+.left{position:relative;width:600px;padding:56px 0 52px 64px;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:14px;font-family:'Outfit';font-weight:700;font-size:34px;letter-spacing:-.02em}
+.brand i{width:48px;height:48px;border-radius:50%;background:#D5DC2C;display:grid;place-items:center}
+.brand svg{width:28px;height:28px;stroke:#1E4034;fill:none;stroke-width:2;stroke-linecap:round}
+h1{font-family:'Outfit';font-weight:700;font-size:54px;line-height:1.04;letter-spacing:-.035em;margin:36px 0 0}
+h1 em{font-style:normal;color:#D5DC2C}
+p{font-size:23px;line-height:1.4;color:rgba(248,246,241,.82);margin:18px 0 0;max-width:480px}
+.foot{margin-top:auto;display:flex;gap:12px}
+.pill{font-size:19px;font-weight:600;padding:10px 18px;border-radius:999px;background:rgba(248,246,241,.1);border:1px solid rgba(248,246,241,.18)}
+.pill.lime{background:#D5DC2C;color:#132A22;border-color:#D5DC2C}
+.photos{position:relative;flex:1}
+.ph{position:absolute;border-radius:26px;overflow:hidden;border:8px solid #F8F6F1;box-shadow:0 30px 50px -24px rgba(0,0,0,.6);background:#F8F6F1}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;border-radius:18px}
+.p1{width:270px;height:340px;left:40px;top:58px;transform:rotate(-5deg)}
+.p2{width:240px;height:300px;left:290px;top:34px;transform:rotate(4deg)}
+.p3{width:230px;height:270px;left:300px;top:332px;transform:rotate(-3deg)}
+.p4{width:230px;height:270px;left:60px;top:380px;transform:rotate(6deg)}
+</style></head><body>
+<div class="card">
+  <div class="left">
+    <div class="brand"><i><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M9 10v.5M15 10v.5"/><path d="M9.5 14.5a3.5 3.5 0 0 0 5 0"/></svg></i>babaholmi</div>
+    <h1>Gondosan válogatott babaholmik, amikből <em>új kedvencek</em> lesznek</h1>
+    <p>Ruhák, cipők, kiegészítők és horgolt játékok — 1/1 egyedi darabok.</p>
+    <div class="foot"><span class="pill lime">{{COUNT}} darab</span><span class="pill">Vinted vevővédelem</span></div>
+  </div>
+  <div class="photos">
+    <div class="ph p1"><img src="../assets/img/{{A}}.jpg"></div>
+    <div class="ph p2"><img src="../assets/img/{{B}}.jpg"></div>
+    <div class="ph p4"><img src="../assets/img/{{D}}.jpg"></div>
+    <div class="ph p3"><img src="../assets/img/{{C}}.jpg"></div>
+  </div>
+</div>
+</body></html>

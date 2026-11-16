@@ -8,3 +8,10 @@ Statikus weboldal, GitHub Pages-en futtatható.
 
 ## Közzététel
 Settings → Pages → Source: *Deploy from a branch* → Branch: `main` / `/ (root)` → Save.
+
+## Kínálat frissítése
+```bash
+python3 tools/update_inventory.py --dry   # csak megmutatja a változásokat
+python3 tools/update_inventory.py         # frissít: eladottak ki, újak be fotóval, darabszám, og-image
+```
+Utána `git add -A && git commit -m "Kínálat frissítése" && git push`.
